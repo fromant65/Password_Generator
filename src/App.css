@@ -1,0 +1,180 @@
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  color: white;
+  --card-bg: rgba(13, 197, 13, 0.3);
+  --card-bg-full-op: rgb(13, 197, 13);
+  --text-green: rgb(35, 225, 35);
+  --input-bg: rgba(150, 150, 150, 0.7);
+  --input-bg-hover: rgba(175, 175, 175, 0.7);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(56, 56, 56, 1) 71%, rgba(71, 71, 71, 1) 100%);
+}
+
+::selection {
+  background: var(--text-green);
+  color: rgb(0, 0, 0)
+}
+
+.info {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--card-bg);
+  margin: 20px;
+  text-align: justify;
+}
+
+.titulo {
+  text-align: center;
+}
+
+.info__parrafo-1 {
+  font-weight: 600;
+}
+
+.content_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.form_div {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form_div label,
+.form_div input {
+  display: block;
+}
+
+.form {
+  padding: 20px;
+  background-color: var(--card-bg);
+  border-radius: 10px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.input {
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--input-bg);
+  margin: auto;
+  width: 90%;
+  color: white;
+  display: inline-block;
+}
+
+.input:focus {
+  outline: 1px solid #eee;
+}
+
+.input:hover {
+  background-color: var(--input-bg-hover);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.submit {
+  padding: 10px;
+  background-color: var(--input-bg);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.submit:hover {
+  cursor: pointer;
+  background-color: var(--input-bg-hover);
+}
+
+/* The slider itself */
+#input_random_level {
+  padding: 5px;
+  width: 90%;
+  -webkit-appearance: none;
+  /* Override default CSS styles */
+  appearance: none;
+  /* Full-width */
+  height: 25px;
+
+  /* Specified height */
+  background: var(--input-bg);
+  /* Grey background */
+  outline: none;
+  /* Remove outline */
+  /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s;
+  /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+#input_random_level:hover {
+  background: var(--input-bg-hover);
+  /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+#input_random_level::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Override default look */
+  appearance: none;
+  width: 20px;
+  /* Set a specific slider handle width */
+  height: 20px;
+  /* Slider handle height */
+  background: #fff;
+  opacity: 1;
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */
+  border-radius: 10px;
+}
+
+#input_random_level::-moz-range-thumb {
+  width: 25px;
+  /* Set a specific slider handle width */
+  height: 25px;
+  /* Slider handle height */
+  background: #fff;
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */
+}
+
+.password_container {
+  background-color: var(--card-bg);
+  padding: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.password_container a {
+  color: var(--text-green);
+  text-decoration: none;
+}
+
+.logo_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
