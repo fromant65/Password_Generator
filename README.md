@@ -1,4 +1,4 @@
-# Bienvenido a Calendar
+# Bienvenido a Password Generator
 
 Este proyecto es un generador de contraseñas seguras con input del usuario
 
